@@ -6,7 +6,7 @@ class App < Sinatra::Base
     erb :newteam
   end
   post '/team' do
-    @data = params
+    @pg = params[point_guard]
     erb :team
   end
 
