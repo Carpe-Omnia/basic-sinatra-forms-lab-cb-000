@@ -7,7 +7,7 @@ class App < Sinatra::Base
   end
   post '/team' do
     puts params
-    @point_guard = params[:point_guard].to_s
+    @point_guard = params[:point_guard]
     puts @point_guard
     @rams = params.to_s
     erb :team
