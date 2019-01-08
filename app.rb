@@ -10,7 +10,7 @@ class App < Sinatra::Base
     pg = params[":point_guard"]
     @point_guard = pg
     puts @point_guard
-    @rams = params.to_s
+    @rams = params
     erb :team
   end
 
